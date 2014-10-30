@@ -1,5 +1,6 @@
 var webgl, sm, gui, clock, ui;
 
+var baseURI = "https://soundcloud.com/hydeout-productions/luvsic-part6-remix";
 
 function init() {
 
@@ -21,6 +22,7 @@ function init() {
 	sm = new SongManager(ui);
 	sm.load(function () {
 		animate();
+		sm.loadAndUpdate(baseURI);
 	});
 
 	var toggleButton = document.getElementById('toggleButton');

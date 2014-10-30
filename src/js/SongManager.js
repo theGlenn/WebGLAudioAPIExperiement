@@ -25,13 +25,15 @@ var SongManager = (function () {
 
     console.log("loading...", window.audio);
 
-    window.audio.addEventListener('canplaythrough', function () {
-      if (!window.songman.sourceNode) {
-        window.songman.setupAudioNodes();
-        fun.call();
-      }
 
-    }, false);
+
+    //window.audio.addEventListener('canplaythrough', function () {
+    if (!window.songman.sourceNode) {
+      window.songman.setupAudioNodes();
+      fun.call();
+    }
+
+    //}, false);
 
   };
 
@@ -76,7 +78,7 @@ var SongManager = (function () {
     //songman.analyser.fftSize = 256;
 
     this.loader = new SoundcloudLoader(this.audio, this.UI);
-    this.audiosource = new SoundCloudAudioSource(this.audio, this);
+    //this.audiosource = new SoundCloudAudioSource(this.audio, this);
 
     console.log(this.loader);
 
@@ -91,7 +93,7 @@ var SongManager = (function () {
 
     console.log("loaded !");
     this.audioNodeSettedUp = true;
-    window.audio.play();
+    //window.audio.play();
 
   }
 

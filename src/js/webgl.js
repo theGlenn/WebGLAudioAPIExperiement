@@ -89,8 +89,8 @@ var Webgl = (function () {
         this.renderer.setClearColor(this.scene.fog.color, 1);
         $('.three').append(this.renderer.domElement);
 
-        // this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
-        //this.controls.damping = 0.2;
+        this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+        this.controls.damping = 0.2;
 
         /*this.controls = new THREE.FlyControls(this.camera);
 

@@ -47,7 +47,8 @@ a:hover, a:active {
     overflow: hidden;
 }
 #controlPanel.hidden {
-    max-height: 10px;
+   top: -10%;
+  /*  max-height: 52px; */
 }
 #tab {
     padding: 10px 16px 2px 16px;
@@ -68,12 +69,7 @@ a:hover, a:active {
     background-color: rgba(255, 255, 255, 0.15);
     padding-top: 10px;
 }
-#trackInfoPanel.hidden {
-    max-height: 0px;
-    -webkit-transition: max-height 0.2s;
-    -moz-transition: max-height 0.2s;
-    transition: max-height 0.2s;
-}
+
 #infoImage {
     float: left;
     padding: 0px 8px 8px 8px;
@@ -144,20 +140,7 @@ a:hover, a:active {
 #messageBox a:link, #messageBox a:visited {
     color: #666;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-    background-color: #111;
-    width: 100%;
-    color: #999;
-    height: 35px;
-}
-#credit, #github {
-    display: inline-block;
-    padding-top: 8px;
-    padding-right: 10px;
-}
+
 #scLogo {
     float: right;
 }
