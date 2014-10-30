@@ -63,11 +63,11 @@ a:hover, a:active {
 }
 #trackInfoPanel {
     float: left;
-    width: 60%;
+    width: 40%;
     overflow: hidden;
     max-height: 200px;
-    -webkit-transition: max-height 0.8s;
-    -moz-transition: max-height 0.8s;
+    -webkit-transition: max-height 0.9s;
+    -moz-transition: max-height 0.9s;
     transition: max-height 0.8s;
     background-color: rgba(255, 255, 255, 0.15);
     padding-top: 10px;
@@ -86,7 +86,7 @@ a:hover, a:active {
 #playerControls {
    text-align: center;
    position: relative;
-   width: 40%;
+   width: 60%;
    height: 108px;
    float: left;
    background-color: rgba(255, 255, 255, 0.15);
