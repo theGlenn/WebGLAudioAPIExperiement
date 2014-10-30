@@ -1,10 +1,9 @@
 {
-  "name": "workshop-threejs-starter",
+  "name": "Threequalizer",
   "version": "0.0.1",
-  "description": "THREE.js Starter Kit for Creative Coding Workshop for CRMA 2015",
+  "description": "THREE.js 3D equalizer in an bastract paysage",
   "main": "src/js/main.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.4.0",
     "gulp-concat": "~2.4.1",
@@ -12,6 +11,10 @@
     "gulp-uglify": "~1.0.1",
     "gulp-watch": "^1.1.0"
   },
-  "author": "Guillaume Gouessan",
-  "license": "BSD-2-Clause"
+  "author": "Glenn Sonna",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/TheGlenn/visualizerexperiment"
+  }
 }
