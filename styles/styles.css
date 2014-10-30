@@ -36,21 +36,21 @@ a:hover, a:active {
 }
 
 #controlPanel {
-z-index: 50;
-position: absolute;
-top: 0;
-width: 100%;
-color: #999;
-max-height: 600px;
-height: 35%;
- -webkit-transition: opacity 0.8s;
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #999;
+    max-height: 600px;
+    height: 35%;
+    -webkit-transition: opacity 0.8s;
     -moz-transition: opacity 0.8s;
     transition: opacity 0.8s;
     overflow: hidden;
 }
 
 #controlPanel.hidden {
- opacity: 0;
+   opacity: 0;
 
 }
 #tab {
@@ -84,13 +84,13 @@ height: 35%;
     font-size: 30px;
 }
 #playerControls {
- text-align: center;
- position: relative;
- width: 40%;
- height: 70%;
- float: left;
- background-color: rgba(255, 255, 255, 0.15);
- padding-top: 10px;
+   text-align: center;
+   position: relative;
+   width: 40%;
+   height: 108px;
+   float: left;
+   background-color: rgba(255, 255, 255, 0.15);
+   padding-top: 10px;
 }
 #input {
     font-size: 20px;
