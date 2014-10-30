@@ -3,16 +3,84 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Awesome Experiment</title>
-	<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
 </head>
-<body>	
+<body>
     <div class="three"></div>
-    <script src="assets/lib/dat-gui/build/dat.gui.min.js"></script>
-	<script src="assets/lib/jquery/dist/jquery.min.js"></script>
-    <script src="assets/lib/greensock/src/minified/TweenMax.min.js"></script>
-	<script src="assets/lib/threejs/build/three.min.js"></script>
 
-    <script src="build/vendors.js"></script>
-    <script src="build/app.min.js"></script>
-</body>
-</html>
+    <div id="controlPanel" class="hidden">
+        <div id="tab"><a href="#" id="toggleButton"><i class="icon-menu"></i></a></div>
+        <div id="trackInfoPanel" class="hidden">
+            <img id="infoImage" src="">
+            <div id="infoArtist"></div>
+            <div id="infoTrack"></div>
+        </div>
+        <div id="playerControls">
+            <form id="form">
+                <input id="input" placeholder="Paste Soundcloud URL here (https://soundcloud.com/artist/track)">
+                <button type="submit" id="submit"><i class="icon-play"></i></button><br>
+            </form>
+            <audio id="player" src="src/js/Nujabes_Feather.mp3" controls="" preload autobuffer></audio>
+        </div>
+    </div>
+
+    <div id="messageBox" class="hidden"></div>
+
+<!-- <audio id="player" src="src/js/funk_blaster.mp3" controls="" preload autobuffer></audio>
+
+<script src="bower_components/dat-gui/build/dat.gui.min.js"></script>
+-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>
+<script src="bower_components/threejs/build/three.js"></script>
+
+
+
+<script src="build/vendors.js"></script>
+<script src="build/app.min.js"></script>
+
+
+<script type="x-shader/x-vertex" id="vertexshader">
+
+    uniform float amplitude;
+    attribute float size;
+    attribute vec3 customColor;
+
+    varying vec3 vColor;
+
+    void main() {
+
+        vColor = customColor;
+
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+
+                //gl_PointSize = size;
+                gl_PointSize = size * ( 300.0 / length( mvPosition.xyz ) );
+
+                gl_Position = projectionMatrix * mvPosition;
+
+            }
+
+        </script>
+
+        <script type="x-shader/x-fragment" id="fragmentshader">
+
+            uniform vec3 color;
+            uniform sampler2D texture;
+
+            varying vec3 vColor;
+
+            void main() {
+
+                gl_FragColor = vec4( color * vColor, 1.0 );
+                gl_FragColor = gl_FragColor * texture2D( texture, gl_PointCoord );
+
+            }
+
+        </script>
+
+
+    </body>
+    </html>

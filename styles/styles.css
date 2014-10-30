@@ -5,3 +5,159 @@ body, html {
     padding: 0;
     overflow: hidden;
 }
+
+
+.icon-github:before {
+	content: "\e600";
+}
+.icon-play:before {
+	content: "\e601";
+}
+.icon-info:before {
+	content: "\e602";
+}
+.icon-menu:before {
+	content: "\e603";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+a, a:visited {
+    text-decoration: none;
+    color: #c6c6c6;
+}
+a:hover, a:active {
+    color: #fff;
+}
+#info {
+    display: none;
+}
+#controlPanel {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #999;
+    max-height: 600px;
+    -webkit-transition: max-height 0.8s;
+   	-moz-transition: max-height 0.8s;
+   	transition: max-height 0.8s;
+    overflow: hidden;
+}
+#controlPanel.hidden {
+    max-height: 10px;
+}
+#tab {
+    padding: 10px 16px 2px 16px;
+    font-size: 32px;
+}
+#tab>a {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 7px 10px 3px 10px;
+}
+#trackInfoPanel {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    max-height: 200px;
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-top: 10px;
+}
+#trackInfoPanel.hidden {
+    max-height: 0px;
+    -webkit-transition: max-height 0.2s;
+    -moz-transition: max-height 0.2s;
+    transition: max-height 0.2s;
+}
+#infoImage {
+    float: left;
+    padding: 0px 8px 8px 8px;
+}
+#infoArtist {
+    font-size: 24px;
+}
+#infoTrack {
+    font-size: 30px;
+}
+#playerControls {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-top: 10px;
+}
+#input {
+    font-size: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
+    margin-left: -30px;
+    width: 80%;
+    max-width: 690px;
+    color: white;
+    background-color: #EBEBEB;
+    color: #333;
+    border: 1px solid #111;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#submit {
+    position: absolute;
+    color: #fff;
+    font-size: 32px;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+#player {
+    width: 95%;
+}
+#messageBox {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    max-height: 500px;
+    -webkit-transition: opacity 0.5s, max-height 0.5s, padding 0.5s;
+    -moz-transition: opacity 0.5s, max-height 0.5s, padding 0.5s;
+    transition: opacity 0.5s, max-height 0.5s, padding 0.5s;
+    z-index: 500;
+    overflow: hidden;
+}
+#messageBox.hidden {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+}
+#messageBox p {
+    margin-bottom: 10px;
+}
+#messageBox a:link, #messageBox a:visited {
+    color: #666;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    background-color: #111;
+    width: 100%;
+    color: #999;
+    height: 35px;
+}
+#credit, #github {
+    display: inline-block;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+#scLogo {
+    float: right;
+}
