@@ -34,21 +34,24 @@ a:hover, a:active {
 #info {
     display: none;
 }
+
 #controlPanel {
-    z-index: 50;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    color: #999;
-    max-height: 600px;
-    -webkit-transition: max-height 0.8s;
-   	-moz-transition: max-height 0.8s;
-   	transition: max-height 0.8s;
+z-index: 50;
+position: absolute;
+top: 0;
+width: 100%;
+color: #999;
+max-height: 600px;
+height: 35%;
+ -webkit-transition: opacity 0.8s;
+    -moz-transition: opacity 0.8s;
+    transition: opacity 0.8s;
     overflow: hidden;
 }
+
 #controlPanel.hidden {
-   top: -10%;
-  /*  max-height: 52px; */
+ opacity: 0;
+
 }
 #tab {
     padding: 10px 16px 2px 16px;
@@ -60,12 +63,12 @@ a:hover, a:active {
 }
 #trackInfoPanel {
     float: left;
-    width: 100%;
+    width: 60%;
     overflow: hidden;
     max-height: 200px;
-	-webkit-transition: max-height 0.8s;
-	-moz-transition: max-height 0.8s;
-	transition: max-height 0.8s;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
     background-color: rgba(255, 255, 255, 0.15);
     padding-top: 10px;
 }
@@ -81,12 +84,13 @@ a:hover, a:active {
     font-size: 30px;
 }
 #playerControls {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    float: left;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding-top: 10px;
+ text-align: center;
+ position: relative;
+ width: 40%;
+ height: 70%;
+ float: left;
+ background-color: rgba(255, 255, 255, 0.15);
+ padding-top: 10px;
 }
 #input {
     font-size: 20px;

@@ -16,7 +16,6 @@ function init() {
 
 	$(window).on('resize', resizeHandler);
 
-
 	var clock = new THREE.Clock();
 
 	sm = new SongManager(ui);
@@ -25,14 +24,7 @@ function init() {
 		sm.loadAndUpdate(baseURI);
 	});
 
-	var toggleButton = document.getElementById('toggleButton');
-	toggleButton.addEventListener('click', function (e) {
-		e.preventDefault();
-		ui.toggleControlPanel();
-	});
-
 	var form = document.getElementById('form');
-	// handle the form submit event to load the new URL
 	form.addEventListener('submit', function (e) {
 		e.preventDefault();
 		var trackUrl = document.getElementById('input').value;
@@ -56,3 +48,6 @@ function onDocumentMouseDown(event) {
 
 $(document).ready(init);
 $('.three').mousedown(onDocumentMouseDown);
+$('#controlPanel').hover(function () {
+	ui.toggleControlPanel();
+});
