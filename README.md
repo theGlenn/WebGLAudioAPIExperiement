@@ -14,10 +14,12 @@ Thanks to [michaelbromley](https://github.com/michaelbromley/soundcloud-visualiz
 Demo
 ----
 
-[Here is demo](http://experiments.crma.ninja/repos/glenn-sonna/#hydeout-productions/luvsic-part6-remix)
+[Here is demo](http://experiments.crma.ninja/repos/glenn-sonna/#bernardo-guerra/hiromi-uehara-dan-ando-no-para)
 Feel free to critique and to fork I intend to Improve myself.
 
 You can play your own song by going to [SoundCloud](https://soundcloud.com) find the music or playlist you want and copy/paste the url  into the input of the visualizer, hit enter or press the play button then enjoy !
+
+If you have some cool song making nice visual interaction with the app send it to me !
 
 Controls
 ----
@@ -49,4 +51,4 @@ Installation
 2. Install the application : `npm i`
 3. Then install the libraries :  `bower install`
 4. Then launch gulp to build : `gulp`
-5. You can use the `index.html`, personally i recomend you to run `http-server` command with node to run it from your browser at `http://localhost:8080`
+5. You can use the `index.html`, personally I recomend you to run `http-server` command with node to run it from your browser at `http://localhost:8080`
