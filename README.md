@@ -11,8 +11,8 @@ The app procedurally generate a terrain reacting to the music inpute with the Au
 
 Thanks to [michaelbromley](https://github.com/michaelbromley/soundcloud-visualizer) for his SoundCloudLoader.
 
-DEMO
-===================
+Demo
+----
 
 [Here is demo](http://experiments.crma.ninja/repos/glenn-sonna/#hydeout-productions/luvsic-part6-remix)
 Feel free to critique and to fork I intend to Improve myself.
@@ -21,14 +21,10 @@ You can play your own song by going to [SoundCloud](https://soundcloud.com) find
 
 Controls
 ----
-
 spacebar = play/pause
 -> (right arrow key) = next track in the playlist
 <- (left arrow key) = previous track in the playlist
 
-
-Instructions
-===================
 
 Version
 ----
@@ -42,8 +38,8 @@ Version
 Dependencies
 -----------
 
-* [threejs] - JavaScript 3D library
-* [gulp] - The streaming build system
+* [threejs](https://github.com/mrdoob/three.js/) - JavaScript 3D library
+* [gulp](http://gulpjs.com/) - The streaming build system
 
 
 Installation
