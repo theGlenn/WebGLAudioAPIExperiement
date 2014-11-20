@@ -1,6 +1,7 @@
 var webgl, sm, gui, clock, ui;
 
-var baseURI = "https://soundcloud.com/hydeout-productions/luvsic-part6-remix";
+var baseURI = "https://soundcloud.com/bernardo-guerra/hiromi-uehara-dan-ando-no-para?in=glenn-sonna-hall/sets/nujasamples";
+//https://soundcloud.com/hydeout-productions/luvsic-part6-remix 
 
 function init() {
 
@@ -8,8 +9,6 @@ function init() {
 	webgl = new Webgl(window.innerWidth, window.innerHeight);
 	ui = new UIManager();
 	ui.toggleControlPanel();
-
-
 
 	//gui = new dat.GUI();
 	//gui.close();
@@ -30,7 +29,6 @@ function init() {
 		var trackUrl = document.getElementById('input').value;
 		sm.loadAndUpdate(trackUrl);
 	});
-
 }
 
 function resizeHandler() {

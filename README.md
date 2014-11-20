@@ -27,7 +27,6 @@ spacebar = play/pause
 -> (right arrow key) = next track in the playlist
 <- (left arrow key) = previous track in the playlist
 
-
 Version
 ----
 
@@ -52,3 +51,13 @@ Installation
 3. Then install the libraries :  `bower install`
 4. Then launch gulp to build : `gulp`
 5. You can use the `index.html`, personally I recomend you to run `http-server` command with node to run it from your browser at `http://localhost:8080`
+
+TODO
+----
+* Improve browser supports : Safari (there is no animations), Firefox (never tested)
+* Performance issues : I noticed some permance issues that on some coputers even with chorme
+* Drag'n'Drop support for local songs
+* Better variation : improve the visuals interactions by adding `low pass` and `high pass` filters
+
+
+
