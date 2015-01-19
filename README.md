@@ -27,6 +27,10 @@ spacebar = play/pause
 -> (right arrow key) = next track in the playlist
 <- (left arrow key) = previous track in the playlist
 
+Stack
+----
+[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/theGlenn/webglaudioapiexperiement)
+
 Version
 ----
 
