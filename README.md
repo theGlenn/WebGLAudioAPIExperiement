@@ -1,6 +1,8 @@
 WebGL & AudioAPI Experiment
 ===================
 
+[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/theGlenn/webglaudioapiexperiement)
+
 Three.js starter kit made for Three.js Workshop.  
 It uses Three.js, Greensock and Jquery as depencies.  
 I also added a few Three.js extra classes from the examples for post-processing.  
@@ -27,9 +29,6 @@ spacebar = play/pause
 -> (right arrow key) = next track in the playlist
 <- (left arrow key) = previous track in the playlist
 
-Stack
-----
-[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/theGlenn/webglaudioapiexperiement)
 
 Version
 ----
