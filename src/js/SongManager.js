@@ -20,11 +20,11 @@ var SongManager = (function () {
 
   SongManager.prototype.load = function (fun) {  
     this.audio = window.audio = document.getElementById('player');  
+    this.audio.crossOrigin = "anonymous";
 
     window.songman = this;
 
     console.log("loading...", window.audio);
-
 
 
     //window.audio.addEventListener('canplaythrough', function () {
